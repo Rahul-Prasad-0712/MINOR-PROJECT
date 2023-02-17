@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Suicide rate prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div align="center">
+        <div class="img">
+        </div>
+        <form class="form">
+            <h2>Year</h2>
+            <input class="year" type="email" id="uiyear" class="floatLabel" name="year" value="">
+            <h2>State</h2>
+            <div>
+                <select class="state" name="" id="uistate">
+                    <option value="" disabled="disabled" selected="selected">Choose a state</option>
+                </select>
+            </div>
+            <h2>Type</h2>
+            <div>
+                <select class="type" name="" id="uitype">
+                    <option value="" disabled="disabled" selected="selected">Choose a Type</option>
+                    <option value="0">Illness (Aids/STD)</option>
+                    <option value="1">Bankruptcy or Sudden change in Economic</option>
+                    <option value="2">Cancellation/Non-Settlement of Marriage</option>
+                    <option value="3">Physical Abuse (Rape/Incest Etc.)</option>
+                    <option value="4">'Dowry Dispute'</option>
+                    <option value="5">Family Problems</option>
+                    <option value="6">Ideological Causes/Hero Worshipping</option>
+                    <option value="7">Other Prolonged Illness</option>
+                    <option value="8">Property Dispute</option>
+                    <option value="9">Fall in Social Reputation</option>
+                    <option value="10">Illegitimate Pregnancy</option>
+                    <option value="11">Failure in Examination'</option>
+                    <option value="12">FInsanity/Mental Illness</option>
+                    <option value="13">Love Affairs</option>
+                    <option value="14">Professional/Career Problem</option>
+                    <option value="15">Divorce</option>
+                    <option value="16">Drug Abuse/Addiction</option>
+                    <option value="17">Not having Children(Barrenness/Impotency</option>
+                    <option value="18">Causes Not known</option>
+                    <option value="19">Unemployment</option>
+                    <option value="20">Other Causes (Please Specity)</option>
+                    <option value="21">Poverty</option>
+                    <option value="22">Death of Dear Person</option>
+                    <option value="23">Cancer</option>
+                    <option value="24">Suspected/Illicit Relation</option>
+                    <option value="25">Paralysis</option>
+                    <option value="26">Diploma</option>
+                    <option value="27">No Education</option>
+                    <option value="28">Middle</option>
+                    <option value="29">Graduate</option>
+                    <option value="30">Hr. Secondary/Intermediate/Pre-Universit</option>
+                    <option value="31">Primary</option>
+                    <option value="32">By Consuming Insecticides</option>
+                    <option value="33">By Hanging</option>
+                    <option value="34">By Jumping from (Other sites)</option>
+                    <option value="35">By touching electric wires</option>
+                    <option value="36">By Machine</option>
+                    <option value="37">By Fire/Self Immolation</option>
+                    <option value="38">By Jumping off Moving Vehicles/Trains</option>
+                    <option value="39">By Other means (please specify)</option>
+                    <option value="40">By Self Infliction of injury</option>
+                    <option value="41">By Over Alcoholism</option>
+                    <option value="42">By Consuming Other Poison</option>
+                    <option value="43">By coming under running vehicles/trains</option>
+                    <option value="44">By Overdose of sleeping pills</option>
+                    <option value="45">By Jumping from (Building)</option>
+                    <option value="46">By Drowning</option>
+                    <option value="47">By Fire-Arms</option>
+                    <option value="48">Retired Person</option>
+                    <option value="49">Unemployed</option>
+                    <option value="50">Public Sector Undertaking</option>
+                    <option value="51">Service (Private)</option>
+                    <option value="52">House Wife</option>
+                    <option value="53">Self-employed (Business activity)</option>
+                    <option value="54">Professional Activity</option>
+                    <option value="55">Student</option>
+                    <option value="56">Others (Please Specify)</option>
+                    <option value="57">Farming/Agriculture Activity</option>
+                    <option value="58">Service (Government)</option>
+                    <option value="59">Married</option>
+                    <option value="60">Seperated</option>
+                    <option value="61">Widowed/Widower</option>
+                    <option value="62">Divorcee</option>
+                    <option value="63">Never Married</option>
+                    <option value="64">Bankruptcy or Sudden change in Economic Status</option>
+                    <option value="65">Not having Children (Barrenness/Impotency</option>
+                    <option value="66">By Other means</option>
+                </select>
+            </div>
+            <h2>Age_Group</h2>
+            <div>
+                <select class="age_group" name="" id="uiage_group">
+                    <option value="" disabled="disabled" selected="selected">Choose a Age</option>
+                    <option value="0"> 0-14 </option>
+                    <option value="1"> 15-29 </option>
+                    <option value="2"> 30-44 </option>
+                    <option value="3"> 45-59 </option>
+                    <option value="4"> 60+ </option>
+                    <option value="5"> 0-100+ </option>
+                </select>
+            </div>
+            <h2>Gender</h2>
+            <div align="center">
+                <select class="gender" name="" id="uigender">
+                    <option value="" disabled="disabled" selected="selected">Choose a Gender</option>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select>
+            </div>
+    </div>
+    <div align="center">
+        <button class="submit" onclick="onClickEstimateRate()" type="button">Estimate Suicide Rate</button>
+        <div id="uiEstimateRate" class="result">
+            <h2></h2>
+        </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

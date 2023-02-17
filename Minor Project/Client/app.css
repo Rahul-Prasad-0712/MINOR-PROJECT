@@ -1,0 +1,55 @@
+@import url(https://);
+
+.State {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2f2;
+    width: 76%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+
+body {
+    background-image: url("PROJECT.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.submit {
+    background: #a5dc86;
+    width: 26%;
+    border: 0;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    background: #e7eb29;
+    width: 26%;
+    border: 0;
+    margin: 25px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
